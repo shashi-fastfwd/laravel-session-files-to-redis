@@ -37,7 +37,7 @@ class TransferSessionFilesToRedisCommand extends Command
      *
      * @return void
      */
-    public function fire()
+    public function handle()
     {
         $session_path = storage_path('framework/sessions');
         $directory = new \DirectoryIterator($session_path);
